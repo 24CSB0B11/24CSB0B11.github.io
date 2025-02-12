@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage</title>
+    <style>
+        body{
+            background-color:#F8F8F2;
+        }
+        .nav{
+            ul{
+                list-style-type: none;
+                background-color: #20c997;
+                margin: 0;
+                padding: 0;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            li{
+               float:left;
+            }
+            li a{
+                display:block;
+                color:#fdfdfd;
+                text-align: center;
+                padding:14px 16px;
+                text-decoration: none;
+                position: sticky;
+                transition :color 0.3s;
+            }
+            li a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+            }
+            li a:hover::after{
+                width:100%;
+            }
+            li a:hover{
+                color: #ffd700;
+            }
+        }
+        .container{
+            position:relative;
+            width:50%;
+            margin-top: 10px;
+            text-align: center;
+            margin: auto;
+        }
+        .image{
+            display:block;
+            width:100%;
+            height:auto;
+            margin-top: 10px;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: steelblue;
+        }
+        .container:hover .overlay{
+            opacity:1;
+        }
+        .text{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="tourismwebsite.html">Home</a></li>
+            <li><a target="_self" href="heritage.html">Heritage</a></li>
+            <li><a href="hotelbooking.html">Hotel Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <a  target="_blank" href="1st.html">
+                <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2018/12/trivandrum.jpg " class="image">
+            <div class="overlay">
+                <div class="text">Padmanaba Sway Temple</div>
+            </div>
+            </a>
+    </div>
+    <div class="container">
+        <a target="_blank" href="2nd.html"><img src="https://assets.zeezest.com/images/PROD_C_1662610838315.jpg " class="image">
+        <div class="overlay">
+            <div class="text">Bekal Fort</div>
+        </div>
+    </a>
+</div>
+<div class="container">
+    <a target="_blank" href="3rd.html"><img src="https://i.redd.it/dt3ihg4l1dl11.jpg " class="image">
+    <div class="overlay">
+        <div class="text">Western Ghats</div>
+    </div>
+    </a>
+    </div>
+    <div class="container">
+        <a  target="_blank" href="4th.html"><img src="https://www.holidify.com/images/compressed/attractions/attr_1600.jpg" class="image">
+        <div class="overlay">
+            <div class="text">Edakkal Caves</div>
+        </div>
+        </a>
+        </div>
+        <div class="container">
+            <a target="_blank" href="5th.html"><img src="https://www.keralatourism.org/images/picture/large/Poonjar_Palace_Kottayam_2469.jpg" class="image">
+            <div class="overlay">
+                <div class="text">Poonjar Palace</div>
+            </div>
+            </a>
+            </div>
+</body>
+</html>

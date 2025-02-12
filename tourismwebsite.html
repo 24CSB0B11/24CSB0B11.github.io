@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <style>
+        body{
+            background-color:#F8F8F2;
+        }
+        .nav{
+            ul{
+                list-style-type: none;
+                background-color: #20c997;
+                margin: 0;
+                padding: 0;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            li{
+               float:left;
+            }
+            li a{
+                display:block;
+                color:#fdfdfd;
+                text-align: center;
+                padding:14px 16px;
+                text-decoration: none;
+                position: sticky;
+                transition :color 0.3s;
+            }
+            li a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+            }
+            li a:hover::after{
+                width:100%;
+            }
+            li a:hover{
+                color: #ffd700;
+            }
+        }
+        .cityname{
+            font-size: 100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .textblend{
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Munnar_Tea_Plantation.jpg') no-repeat center;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+        .logo img{
+           width:100px;
+           height:100px;
+           margin-right: 20px;
+        }
+        .textback{
+            background-color: #FFE4B5;
+            border-radius: 20px;
+            padding:10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="tourismwebsite.html">Home</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="hotelbooking.html">Hotel Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="cityname">
+        <div class="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2021/01/Kerala_Tourism_Logo.png">
+        </div>
+        <div class="textblend">
+            KERALA
+        </div>
+    </div>
+    <div class="textback">
+    <h1 style="color:#8B4513; text-align:center">Welcome to Kerala Tourism</h1>
+    <p><b>Discover the magic of Kerala, India’s enchanting paradise.</p>
+        <p>Nestled in the southwestern corner of India, Kerala is a haven of lush greenery, serene backwaters, and vibrant culture. Renowned for its diverse landscapes and rich heritage, Kerala offers an unparalleled travel experience that captivates every visitor.</p>
+        </div>
+        <div class="textback">
+        <h1 style="color:#8B4513;text-align: center;">Immerse Yourself in Nature’s Beauty</h1>
+        <p>Kerala is home to majestic hill stations, pristine beaches, and verdant tea plantations. Explore the tranquil backwaters of Alleppey, the picturesque hill station of Munnar, and the golden sands of Kovalam Beach. Embrace the serene beauty of Kerala’s landscapes and reconnect with nature.</p>
+        </div>   
+        <div class="textback"> 
+        <h1 style="color:#8B4513;text-align: center;">Cultural Heritage and Tradition</h1>
+     <p>Kerala’s rich cultural heritage is reflected in its ancient temples, classical dance forms, and traditional festivals. Witness the grandeur of Kathakali performances, the elegance of Mohiniyattam, and the vibrant celebrations of Onam. Discover the stories and traditions that have shaped Kerala’s unique identity.</p>   
+    </div>
+    <div class="textback">
+     <h1 style="color: #8B4513;text-align: center;">Culinary Delights</h1>
+    <p>Indulge in Kerala’s culinary treasures, from aromatic spices to mouth-watering seafood dishes. Savor the flavors of traditional Kerala cuisine, including the famous Sadya, Malabar biryani, and freshly caught fish cooked in coconut oil. Experience a culinary journey that tantalizes your taste buds.</p>    
+    </div>
+    <div class="textback">
+    <h1 style="color: #8B4513;text-align: center;">Adventure and Recreation</h1>
+    <p>For the adventure enthusiasts, Kerala offers a plethora of activities such as trekking, wildlife safaris, and water sports. Explore the lush forests of Thekkady, embark on a thrilling trek in Wayanad, or enjoy a rejuvenating Ayurvedic spa treatment. Kerala is a playground for both relaxation and adventure.</p>
+    </div>
+</body>
+</html>

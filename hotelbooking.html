@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotek Booking</title>
+    <style>
+        body{
+            background-color:#F8F8F2;
+        }
+        .nav{
+            ul{
+                list-style-type: none;
+                background-color: #20c997;
+                margin: 0;
+                padding: 0;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            li{
+               float:left;
+            }
+            li a{
+                display:block;
+                color:#fdfdfd;
+                text-align: center;
+                padding:14px 16px;
+                text-decoration: none;
+                position: sticky;
+                transition :color 0.3s;
+            }
+            li a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+            }
+            li a:hover::after{
+                width:100%;
+            }
+            li a:hover{
+                color: #ffd700;
+            }
+        }
+        .form{
+            background-position: center;
+                display:flex;
+                justify-content: center;
+        }
+        button{
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            background-color: #00bfff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: #49a517;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a  href="tourismwebsite.html">Home</a></li>
+            <li><a  href="heritage.html">Heritage</a></li>
+            <li><a  href="hotelbooking.html">Hotel Booking</a></li>
+            <li><a  href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <script>
+        function validateform()
+        {
+            let x=document.myforms.firstname.value;
+            if(x==""||x==null)
+        {
+            alert("First name can't be blank");
+            return false;
+        }
+        }
+    </script>
+    <div class="form">
+    <form action="" name="myforms" method="post" onsubmit="return validateform()">
+        First name:<br>
+        <input type="text" name="firstname">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <br> 
+        Mobile number:<br>
+        <input type="number" name="mobileno">
+        <br>
+        Email id:<br>
+        <input type="email" name="email">
+        <br>
+        Check-in date:<br>
+        <input type="date">
+        <br>
+        Check-out date:<br>
+        <input type="date">
+        <br>
+        Room Type:<br>
+        <input type="text">
+        <br>
+        Number of People:<br>
+        <input type="number">
+        <br>
+        Special Rquest:<br>
+        <textarea rows="5" cols="20"></textarea>
+        <br>
+    </form>
+    </div>
+    <input type="submit" value ="Submit">
+    <button type="save">save</button>
+    <button type="clear">clear</button>
+</body>
+</html>
