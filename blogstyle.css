@@ -75,12 +75,12 @@ body{
 }
 
 .font-two {
-    font-family:  'Montserrat', sans-serif; /* Modern sans-serif font */
+    font-family:  'Montserrat', sans-serif;
     font-weight: 900;
     color: #E2725B;
 }
 button {
-    background: linear-gradient(to right, #ff512f, #dd2476); /* Gradient effect */
+    background: linear-gradient(to right, #ff512f, #dd2476); 
     color: white;
     padding: 12px 24px;
     border: none;
@@ -95,7 +95,6 @@ button:hover {
     background: linear-gradient(to right, #dd2476, #ff512f);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* Footer Container */
 .footer {
     background-color: #222;
     color: white;
@@ -103,8 +102,6 @@ button:hover {
     text-align: center;
     font-family: Arial, sans-serif;
 }
-
-/* Footer Layout */
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -112,15 +109,11 @@ button:hover {
     max-width: 1100px;
     margin: auto;
 }
-
-/* Footer Sections */
 .footer-about, .footer-links, .footer-social {
     flex: 1;
     min-width: 250px;
     margin: 20px;
 }
-
-/* Footer Headings */
 .footer h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -128,8 +121,6 @@ button:hover {
     display: inline-block;
     padding-bottom: 5px;
 }
-
-/* Footer Links */
 .footer-links ul {
     list-style: none;
     padding: 0;
@@ -186,7 +177,6 @@ button:hover {
     justify-content: space-around;
     gap: 20px;
 }
-/* Post Lifting Effect */
 .post {
     background-color: #E3F2FD;
     width: 30%;
@@ -195,22 +185,16 @@ button:hover {
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* Lift effect on hover */
 .post:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
-/* Image Container for Overflow Handling */
 .post img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.5s ease-in-out;
 }
-
-/* Zoom-In on image hover only */
 .post img:hover {
     transform: scale(1.1);
 }
@@ -224,7 +208,7 @@ button:hover {
 
 .typecat {
     position: relative;
-    width: 150px; /* Adjust size */
+    width: 150px; 
     height: 150px;
 }
 
@@ -235,8 +219,6 @@ button:hover {
     border-radius: 50%;
     display: block;
 }
-
-/* Transparent Black Overlay (Always Visible) */
 .overlay {
     position: absolute;
     top: 0;
@@ -251,7 +233,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    opacity: 1; /* Always visible */
+    opacity: 1; 
 }
 .custom-form {
     width: 300px;
