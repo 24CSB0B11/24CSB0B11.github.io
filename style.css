@@ -160,22 +160,22 @@ button{
 }
 .cl-gallery {
     display: flex;
-    gap: 20px; /* Adds space between images */
-    justify-content: center; /* Center images horizontally */
-    flex-wrap: wrap; /* Makes images wrap on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .picture-container {
     position: relative;
-    width: 250px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-    overflow: hidden; /* Prevents overflow */
+    width: 250px;
+    height: 200px; 
+    overflow: hidden;
 }
 
 .picture-container img {
-    width: 100%; /* Makes the image fit inside */
+    width: 100%; 
     height: 100%;
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    object-fit: cover; 
 }
 
 .overlay {
@@ -183,7 +183,7 @@ button{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 51, 102, 0.7); /* Dark overlay */
+    background-color: rgba(0, 51, 102, 0.7);
     width: 100%;
     height: 0;
     transition: .5s ease;
@@ -207,10 +207,10 @@ button{
     transform: translate(-50%, -50%);
 }
 footer {
-    background: #003366;  /* Dark blue background */
-    color: white;         /* White text */
-    padding: 20px 0;      /* Padding for spacing */
-    text-align: center;   /* Center the text */
+    background: #003366;  
+    color: white;        
+    padding: 20px 0;      
+    text-align: center;   
     margin-top: 40px;
 }
 
