@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <h1>Add movies to your wishlist</h1>
+    <div class="input">
+       <form>
+        Enter the movie name:<br>
+        <input type="text" id="moviename" placeholder="Enter the movie name">
+       </form>
+    </div>
+
+    <ul id="displaymovie"></ul>
+    <button id="addmoviebtn" class="btn">Add Movie</button>
+    <button id="clearall" class="btn">Clear</button>
+    <p>Total movies added:</p><span id="count">0</span>
+    </div>
+    <script>
+        let movies=[];
+        const movieName=document.getElementById('moviename');
+        const addMoviebtn=document.getElementById('addmoviebtn');
+        const clearAll=document.getElementById('clearall');
+        const counT=document.getElementById('count');
+        const displayMovie=document.getElementById('displaymovie');
+        function display(){
+             displayMovie.innerHTML='';
+             movies.forEach((name,index) => {
+                    const li=document.createElement('li');
+                    li.textContent=name;
+                    displayMovie.appendChild(li);
+             });
+             counT.textContent=movies.length;
+             }
+        function inmovie(){
+            const movieinput=movieName.value.trim();
+        if(movieinput==='')
+        {
+            alert('Movie name cannot be left blank');
+            return;
+        }
+        movies.push(movieinput);
+        movieName.value='';
+        display();
+        }
+        function clearinput(){
+            movies=[];
+            display();
+        }
+        addMoviebtn.addEventListener('click',inmovie);
+        clearAll.addEventListener('click',clearinput);
+    </script>
+</body>
+</html>
