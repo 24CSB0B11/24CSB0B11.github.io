@@ -1,0 +1,244 @@
+header {
+    background: #003366;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    color: white;
+}
+header p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #f4a261;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.navs{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    margin: 0 ;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.navs li{
+    margin: 0;
+}
+.navs a{
+    text-decoration: none;
+    font-size:18px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.line{
+    background: #003366;
+    padding: 3px;
+}
+.slide-container{
+    position:relative;
+    max-width:100%;
+    height:500px;
+    overflow: hidden;
+}
+.slides img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.slides{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    animation: fadeeffect 9s infinite;
+}
+@keyframes fadeeffect{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    50%{
+        opacity:1;
+    }
+    80%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+.slides:nth-child(1) {animation-delay: 0s;}
+.slides:nth-child(2) {animation-delay: 3s;}
+.slides:nth-child(3) {animation-delay: 6s;}
+.slides:nth-child(4) {animation-delay: 9s;}
+hr{
+    border: 1.8px solid #003366;
+    margin-top: 2px;
+}
+marquee span{
+    margin-right: 20px;
+}
+.container {
+    display: flex;         
+    gap: 5rem;             
+    justify-content: left; 
+    margin-left: 300px;
+}
+
+.events-container {
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    max-width: 300px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.upcevents-title{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+}
+.upcevents-descp{
+    color: black;
+    font-size: 15px;
+}
+.upcevents-descp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.otherbutton-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap : 60px;
+}
+button{
+    color: #003366;
+    background-color: white;
+    border: 2px solid #003366;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.cl-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.cl-title{
+    max-width: 400px;
+    color: #dc3545;
+    font-size: 50px;
+    font-weight: bold;
+}
+.cl-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.picture-container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 51, 102, 0.7);
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.picture-container:hover .overlay {
+    height: 100%;
+    visibility: visible;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer {
+    background: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
