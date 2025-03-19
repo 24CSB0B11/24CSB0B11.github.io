@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Validation</title>
+    <link rel="stylesheet" href="home2_style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Visa Validation</h1>
+      <form action="home2_be.php" method="post">
+        Enter your Email:<br>
+        <input type="email" name="email" placeholder="enter your email" required><br>
+        Enter your Passport number:<br>
+        <input type="number" name="passnum" placeholder="enter the number" required><br>
+        <select name="dropdown" id="dropdown">
+            <option value="U">USA</option>
+            <option value="C">Canada</option>
+            <option value="I">India</option>
+            <option value="UK">UK</option>
+            <option value="AUS">Australia</option>
+        </select>
+        <br>
+        <button type="submit">Apply for Visa</button>
+      </form>
+    </div>
+</body>
+</html>
