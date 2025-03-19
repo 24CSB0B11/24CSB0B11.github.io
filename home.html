@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa checking</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Visa Details</h1>
+        <select name="dropdown" id="dropdown">
+            <option value="U">USA</option>
+            <option value="C">Canada</option>
+            <option value="I">India</option>
+            <option value="UK">UK</option>
+            <option value="AUS">Australia</option>
+        </select>
+        <button id="check">Check Visa</button>
+        <div id="display"></div>
+        </div>
+        <script>
+            let dropdown=document.getElementById('dropdown');
+            let display=document.getElementById('display');
+            let check=document.getElementById('check');
+            check.addEventListener("click",function(){
+                let selectedValue=dropdown.value;
+            if(selectedValue=='U')
+            {
+                display.innerHTML='Visa required for most applicants.';
+            }
+            if(selectedValue=='C')
+            {
+                display.innerHTML='Visa required unless you have an eTA.';
+            }
+            if(selectedValue=='I')
+            {
+                display.innerHTML='Visa required before travel.';
+            }
+            if(selectedValue=='UK')
+            {
+                display.innerHTML='Visa depends on the duration of stay.';
+            }
+            if(selectedValue=='AUS')
+            {
+                display.innerHTML='eVisa available for eligible travelers.';
+            }
+            });
+        </script>
+</body>
+</html>
